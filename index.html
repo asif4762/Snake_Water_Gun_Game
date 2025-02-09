@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake-Water-Gun Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        button { font-size: 18px; margin: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Snake-Water-Gun Game</h1>
+    <form method="post">
+        <button type="submit" name="choice" value="Snake">Snake</button>
+        <button type="submit" name="choice" value="Water">Water</button>
+        <button type="submit" name="choice" value="Gun">Gun</button>
+    </form>
+
+    {% if user_choice %}
+        <h2>You chose: {{ user_choice }}</h2>
+        <h2>Computer chose: {{ computer_choice }}</h2>
+        <h2>{{ result }}</h2>
+    {% endif %}
+</body>
+</html>

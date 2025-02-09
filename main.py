@@ -4,7 +4,6 @@ import random
 -1 for snake
 0 for gun
 '''
-
 computer = random.choice([0,1,-1])
 youstr = input("Enter your choice : ")
 youDist = {"s" : 1, "w" : -1, "g" : 0}
